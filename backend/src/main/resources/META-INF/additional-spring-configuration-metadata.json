@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "com.project.bkcollection.token.access.key",
+    "type": "java.lang.String",
+    "description": "A description for 'com.project.bkcollection.token.access.key'"
+  },
+  {
+    "name": "com.project.bkcollection.token.access.expiration",
+    "type": "java.lang.String",
+    "description": "A description for 'com.project.bkcollection.token.access.expiration'"
+  },
+  {
+    "name": "com.project.bkcollection.token.refresh.key",
+    "type": "java.lang.String",
+    "description": "A description for 'com.project.bkcollection.token.refresh.key'"
+  },
+  {
+    "name": "com.project.bkcollection.token.refresh.expiration",
+    "type": "java.lang.String",
+    "description": "A description for 'com.project.bkcollection.token.refresh.expiration'"
+  }
+]}

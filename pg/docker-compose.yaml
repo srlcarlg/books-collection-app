@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  pgdb:
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: "123456"
+    ports:
+      - "15432:5432"
+    volumes:
+      - /tmp/containers/postgres_sql:/var/lib/postgresql/data:z
+    networks:
+      - postgres-compose-network
+
+  pgadm:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@email.com"
+      PGADMIN_DEFAULT_PASSWORD: "123456"
+    ports:
+      - "9876:80"
+    depends_on:
+      - pgdb
+    networks:
+      - postgres-compose-network
+
+networks:
+  postgres-compose-network:
+    driver: bridge

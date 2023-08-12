@@ -1,0 +1,4 @@
+enum BookStatus {
+  available,
+  missing,
+}
