@@ -22,9 +22,9 @@ The front-end was made in **Flutter/Dart**, having as reference and initial insp
 ## Use
 *'pg'* folder is the *postgresql+pgadmin* in *docker-compose* used during development and required for full backend functionality. <br> **Run *"docker-compose up -d"* inside the folder.**
 
-After having the containers working, **access pgAdmin4 via *0.0.0.0:9876*,** <br>
-**Add a new Server** where the hostname/address will be the name of the postgresql container (in this case **pgdb**) **port 5432.** <br>
-With a successful connection, **create a new database called '*bkcollection*'**
+After having the containers working, ¹**access pgAdmin4 via *0.0.0.0:9876*,** <br>
+²**Add a new Server** where the hostname/address will be the name of the postgresql container (in this case **pgdb**) **port 5432.** <br>
+With a successful connection, ³**create a new database called '*bkcollection*'**
 
 Now we can run the application, for that we have two options: <br>
 **Option 1**: Use the respective IDEs *(Spring Tool Suite and Android Studio)* to run the back/front end. <br>
@@ -32,7 +32,8 @@ Now we can run the application, for that we have two options: <br>
 - backend: *"mvn spring-boot:run"*
 - frontend: *"flutter run -d platform_name"*, where *platform_name* can be *windows, linux, chrome, web-server,* etc.
 
-There are 3 initial users added via flyway migration with their respective authorities:  *[admin, librarian, client]@email.com*, where the password for all of them is *123456*.
+There are 3 initial users added via flyway migration with their respective authorities: <br>
+*[admin, librarian, client]@email.com*, where the password for all of them is *123456*.
 
 In default settings, API documentation can be accessed at: <br>
 http://localhost:8080/swagger-ui.html or http://localhost:8080/swagger-ui/index.html
